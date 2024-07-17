@@ -1,6 +1,4 @@
 package com.automation.steps;
-
-import com.automation.pages.HomePage;
 import com.automation.pages.LoginPage;
 import com.automation.utils.ConfigReader;
 import io.cucumber.java.en.Given;
@@ -26,7 +24,4 @@ public class LoginSteps {
     public void user_enters_username_and_password(String string, String string2) {
         loginPage.doLogin(ConfigReader.getConfigValue(string),ConfigReader.getConfigValue(string2));
     }
-
-
-
 }
